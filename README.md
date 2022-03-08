@@ -17,6 +17,7 @@ A gestão e a definição de localização das lojas em um shopping é algo muit
 ## Tecnologias
 - HTML e Javascript - Estrutura do site
 - C++ (Arduino) - Instalação de sensores de movimento
+- NodeJS - Persistencia dos dados na base
 - MySQL - Sistema de gerenciamento de banco de dados
 
 ## Autores
