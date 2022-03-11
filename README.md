@@ -1,6 +1,6 @@
 <p align="center">
     <img 
-      src="https://i.imgur.com/J8N1SaC.png"
+      src="https://i.imgur.com/69I9dFW.png"
       alt="logo MallHub - sombra de uma sacola de shopping com o nome do projeto Mallhub" 
       width="100" 
       height="100"
