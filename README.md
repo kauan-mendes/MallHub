@@ -22,8 +22,9 @@ A gestão e a definição de localização das lojas em um shopping é algo muit
 
 ## Autores
 - **Maria Eduarda** - [ferreiramadu](https://github.com/ferreiramadu)
-- **Gustavo Rezende** - [GabrielMaxi1602](https://github.com/GabrielMaxi1602)
+- **Gabriel Maximiano** - [GabrielMaxi1602](https://github.com/GabrielMaxi1602)
 - **Kauan Mendes** - [kauanmendesss](https://github.com/kauanmendesss)
 - **Kawan Gonçalves** - [kawan-goncalves](https://github.com/kawan-goncalves)
 - **Leonardo Nacagawa Silva** - [nakaleo13](https://github.com/nakaleo13)
 - **Yohan Hudson** - [yohanhudson](https://github.com/yohanhudson)
+- **Gustavo Rezende** - [gustavorezende96](https://github.com/gustavorezende96)
