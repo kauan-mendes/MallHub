@@ -10,6 +10,7 @@
 <h3 align="center">Mallhub</h3>
 <p align="center">Um sistema para gerenciar o fluxo de pessoas em shoppings</p>
 
+
 ## Sobre o Projeto
 
 A gestão e a definição da localização das lojas e dos painéis de propagandas em um shopping é muito influente e contribui para a renda e retenção de público do mesmo. A busca por uma maneira inteligente e eficiente de gestão é essencial e impacta diretamente no estabelecimento (varejo), quanto do shopping em geral. Tendo em vista essa possibilidade de potencialização da margem dos lucros e utilização dos próprios clientes do shopping para estudar as melhores configurações de distribuições das lojas e dos painéis de propagandas, criamos esse projeto.
