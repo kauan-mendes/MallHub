@@ -20,6 +20,7 @@ A gestão e a definição da localização das lojas e dos painéis de propagand
 - NodeJS - Persistencia dos dados na base
 - MySQL - Sistema de gerenciamento de banco de dados
 
+
 ## Autores
 - **Maria Eduarda** - [ferreiramadu](https://github.com/ferreiramadu)
 - **Gabriel Maximiano** - [GabrielMaxi1602](https://github.com/GabrielMaxi1602)
@@ -28,3 +29,4 @@ A gestão e a definição da localização das lojas e dos painéis de propagand
 - **Leonardo Nacagawa Silva** - [nakaleo13](https://github.com/nakaleo13)
 - **Yohan Hudson** - [yohanhudson](https://github.com/yohanhudson)
 - **Gustavo Rezende** - [gustavorezende96](https://github.com/gustavorezende96)
+
