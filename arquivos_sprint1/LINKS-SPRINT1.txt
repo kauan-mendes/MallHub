@@ -1,0 +1,9 @@
+Ferramenta de gestão
+https://trello.com/b/3N9nFv7d/backlog-mallhub
+
+Plataforma de hospedagem de código fonte
+https://github.com/ferreiramadu/MallHub
+
+site institucional
+https://www.figma.com/proto/DwrYAStjWZOtzVjylM4vqj/MallHub?node-id=72%3A17
+

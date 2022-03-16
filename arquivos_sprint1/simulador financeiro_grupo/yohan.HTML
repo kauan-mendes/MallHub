@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Financeiro</title>
+</head>
+
+<body>
+    <p><b>Qual nome do Shopping:</b><input id="Nome_shopping" placeholder="ex: Shopping Floripa"></p>
+    <P><b>Informe a area total:</b></b><input id="Total_Area" placeholder="ex: 30000"></P>
+    <p><b>Informe a area de vacancia:</b><input id="Area_vacancia" placeholder="ex: 10000"></p>
+    <p><b>Infrome o lucro anual:</b><input id="Lucro_anual" placeholder="ex: 150000000"></p>
+
+    <p><button onclick="Calcular()">Calcular</button></p>
+    <br>
+    <br>
+    <div id="Mostrar_Resultado"></div>
+    <div style="text-align: center;" id="Contrate"></div>
+</body>
+
+</html>
+<script>
+
+    function Calcular() {
+        var Total_Metro2 = Number(Lucro_anual.value) / Number(Total_Area.value)
+        var Total_Preju = Total_Metro2 * Area_vacancia.value
+
+        Mostrar_Resultado.innerHTML = `Seu prejuizo anual com as area de vacancia foi de ${Total_Preju.toLocaleString("pt-BR", { currency: "BRL", style: "currency" })}`
+        Contrate.innerHTML = `<br><br><br><br><h1>Contrate para mais informações!</h1>`
+    }
+</script>

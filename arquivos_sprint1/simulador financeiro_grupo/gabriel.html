@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-image: url();">
+    <div style="margin-left: 30%; font-size: 20px;">
+    <h1 style="color: rgb(0, 255, 0); margin-left: 10%;">Simulador financeiro</h1>
+    <img src="https://i.pinimg.com/originals/f5/48/8f/f5488f7af15452c26a5cd481f3501dfe.png" alt="imagem de um cifrao" style="margin-left: 27%; width: 5%; margin-bottom: 8px;"><br>
+    Area total utilizada no seu shopping (em metros quadrados):<input type="number" id="input_area_utlizada_shopping"><br>
+    Lucro total do seu shopping: <input type="number" id="input_lucro_total"><br>
+    Area total de vacancia (em metros quadrados): <input type="number" id="input_vacancia_total"><br>
+    <button onclick="prejuizo()">
+        Calcular prejuizo
+    </button>
+    <div id="divtext"></div>
+</div>
+</body>
+</html>
+
+<script>
+    function prejuizo() {
+        var area_total = input_area_utlizada_shopping.value
+        var lucro_total = input_lucro_total.value
+        var vacancia_total = input_vacancia_total.value 
+        var lucro_por_area = lucro_total / area_total
+        var prejuizo_vacancia = lucro_por_area * vacancia_total
+        divtext.innerHTML= `Dos seus R$${lucro_total} você está perdendo R$${prejuizo_vacancia.toFixed(2)}` 
+    }
+</script>
