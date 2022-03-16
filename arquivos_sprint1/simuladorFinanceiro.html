@@ -8,7 +8,7 @@
     <title>Mallhub - simulador</title>
 </head>
 
-<body>
+<body style="background-color: #f0f0f0ff;">
     <div
         style="height: 95vh; font-family: Arial; flex-direction: column; display: flex; justify-content: center; align-items: center;">
         <div>
@@ -92,6 +92,6 @@
 
         var prejuizo = (lucro / areaTotal) * vacancia
 
-        resultado.innerHTML = `O shopping ${nome} possui uma area de ${vacancia}m² desocupados, gerando o prejuizo de, em média, ${prejuizo.toLocaleString("pt-BR", {currency: "BRL", style: "currency"})}, com nosso produto podemos ver especificamente quais áreas do seu shopping não estão gerando receita e transforma-las em lugares influentes para que não haja prejuizos.`
+        resultado.innerHTML = `O shopping ${nome} possui uma area de ${vacancia}m² desocupados, gerando o prejuizo de, em média, ${prejuizo.toLocaleString("pt-BR", {currency: "BRL", style: "currency"})}. Com nosso produto podemos ver especificamente quais áreas do seu shopping não estão gerando receita e transforma-las em lugares influentes para que não haja prejuizos.`
     }
 </script>
