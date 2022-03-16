@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador financeiro</title>
+</head>
+<body style="background-color:turquoise">
+
+<h1>Simulador Financeiro</h1>
+
+Área total utilizada (m2): <input id="area_total"><br><br>
+Lucro anual: <input id="lucro_anual"><br><br>
+Área total de vacância (m2): <input id="area_vacancia"><br><br>
+
+<button onclick="calcular()">Calcular</button>
+
+
+
+</body>
+</html>
+
+<script>
+
+function calcular(){
+
+
+var lucro_m2= Number (lucro_anual.value / area_total.value)
+var prejuizo= Number (lucro_m2 * area_vacancia.value)
+
+
+divcalcule.innerHTML=`Seu prejuízo desse ano com as áreas de vacância foi em média de R$ ${prejuizo.toFixed(2)}`
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+</script>

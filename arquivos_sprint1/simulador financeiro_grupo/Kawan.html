@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Financeiro</title>
+</head>
+<body>
+    <h1>Simule o fluxo de pessoas em seu shopping durante um feriado</h1><br><br>
+    Selecione o Local que deseja analisar :
+    <select id='local_sensores'>
+        <option value= 'na Entrada Principal'>Entrada Principal</option>
+        <option value= 'na Entrada Lateral'>Entrada Lateral</option>
+        <option value='na Entrada do Estacionamento'>Entrada Estacionamento</option>
+        <option value='no Corredor do Banheiro no Piso Superior'>Corredor Banheiro Piso Superior</option>
+        <option value='no Corredor do Banheiro no Piso Inferior'>Corredor Banheiro Piso Inferior</option>
+        <option value='no Totem propaganda do Corredor 1'>Totem propaganda do Corredor 1</option>
+        <option value='no Totem propaganda do Corredor 2'>Totem propaganda do Corredor 2</option>
+        <option value='no Totem propaganda das escadas rolante'>Totem propaganda das escadas rolante</option>
+        <option value='no Telão propaganda na Praça de Alimentação'>Telão propaganda na Praça de Alimentação</option>
+    </select><br><br>
+    Selecione o Horário que deseja analisar :
+        <select id='Horarios'>
+            <option value= 'hora1' >10:00 - 11:00</option>
+            <option value= 'hora2' >11:00 - 12:00</option>
+            <option value= 'hora3' >12:00 - 13:00</option>
+            <option value= 'hora4' >13:00 - 14:00</option>
+            <option value= 'hora5' >14:00 - 15:00</option>
+            <option value= 'hora6' >15:00 - 16:00</option>
+            <option value= 'hora7' >16:00 - 17:00</option>
+            <option value= 'hora8' >17:00 - 18:00</option>
+            <option value= 'hora9' >18:00 - 19:00</option>
+            <option value= 'hora10' >19:00 - 20:00</option>
+            <option value= 'hora11' >20:00 - 21:00</option>
+            <option value= 'hora12' >21:00 - 22:00</option>
+        </select><br>
+        <button onclick="simular()">Simular</button><br><br>
+        <div id="Simulacao"></div>
+</body>
+</html>
+<script>
+
+function simular(){
+    var local_sensor = local_sensores.value
+    var Horarioss = Horarios.value
+
+    if(local_sensor == 'na Entrada Principal'){
+        
+        if(Horarioss == 'hora1')   {
+        var fluxo = 'um aumento de 50%'
+        Simulacao.innerHTML = `Houve ${fluxo} no fluxo de pessoas em comparação à um dia semanal comum ${local_sensor}`
+        }
+        else if(Horarioss == 'hora2')   {
+        var fluxo = 'um aumento de 70%'
+        Simulacao.innerHTML = `Houve ${fluxo} no fluxo de pessoas em comparação à um dia semanal comum ${local_sensor}`
+        }
+        else if(Horarioss == 'hora3')   {
+        var fluxo = 'um aumento de 100%'
+        Simulacao.innerHTML = `Houve ${fluxo} $no fluxo de pessoas em comparação à um dia semanal comum ${local_sensor}`
+        }
+        else if(Horarioss == 'hora4')   {
+        var fluxo = 'um aumento de 150%'
+        Simulacao.innerHTML = `Houve ${fluxo} $no fluxo de pessoas em comparação à um dia semanal comum ${local_sensor}`
+        }
+        else if(Horarioss == 'hora5')   {
+        var fluxo = 'um aumento de 140%'
+        Simulacao.innerHTML = `Houve ${fluxo} $no fluxo de pessoas em comparação à um dia semanal comum ${local_sensor}`
+        }
+        else if(Horarioss == 'hora6')   {
+        var fluxo = 'um aumento de 130%'
+        Simulacao.innerHTML = `Houve ${fluxo} $no fluxo de pessoas em comparação à um dia semanal comum ${local_sensor}`
+        }
+        else if(Horarioss == 'hora7')   {
+        var fluxo = 'um aumento de 100%'
+        Simulacao.innerHTML = `Houve ${fluxo} $no fluxo de pessoas em comparação à um dia semanal comum ${local_sensor}`
+        }
+        else if(Horarioss == 'hora8')   {
+        var fluxo = 'um aumento de 60%'
+        Simulacao.innerHTML = `Houve ${fluxo} no fluxo de pessoas em comparação à um dia semanal comum ${local_sensor}`
+        }
+        else if(Horarioss == 'hora9')   {
+        var fluxo = 'um aumento de 50%'
+        Simulacao.innerHTML = `Houve ${fluxo} no fluxo de pessoas em comparação à um dia semanal comum ${local_sensor}`
+        }
+        else if(Horarioss == 'hora10')   {
+        var fluxo = 'um aumento de 80%'
+        Simulacao.innerHTML = `Houve ${fluxo} no fluxo de pessoas em comparação à um dia semanal comum ${local_sensor}`
+        }
+        else if(Horarioss == 'hora11')   {
+        var fluxo = 'um aumento de 75%'
+        Simulacao.innerHTML = `Houve ${fluxo} no fluxo de pessoas em comparação à um dia semanal comum ${local_sensor}`
+        }
+        else{
+        var fluxo = 'um aumento de 20%'
+        Simulacao.innerHTML = `Houve ${fluxo} no fluxo de pessoas em comparação à um dia semanal comum ${local_sensor}`
+        }
+    }
+    else if(local_sensor=='na Entrada Lateral'){
+        if(Horarioss == 'hora1')   {
+        var fluxo = 'um aumento de 55% no fluxo de pessoas em comparção a um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora2')   {
+        var fluxo = 'um aumento de 65% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora3')   {
+        var fluxo = 'um aumento de 90% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora4')   {
+        var fluxo = 'um aumento de 170% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora5')   {
+        var fluxo = 'um aumento de 128% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora6')   {
+        var fluxo = 'um aumento de 133% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora7')   {
+        var fluxo = 'um aumento de 96% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora8')   {
+        var fluxo = 'um aumento de 65% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora9')   {
+        var fluxo = 'um aumento de 49% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora10')   {
+        var fluxo = 'um aumento de 80% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora11')   {
+        var fluxo = 'um aumento de 57% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else{
+        var fluxo = 'um aumento de 10%'
+        Simulacao.innerHTML = `Houve ${fluxo} no fluxo de pessoas em comparação à um dia semanal comum ${local_sensor}`
+        }
+    }
+    else if(local_sensor=='na Entrada do Estacionamento'){
+        if(Horarioss == 'hora1')   {
+        var fluxo = 'um aumento de 44% no fluxo de pessoas em comparação a um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora2')   {
+        var fluxo = 'um aumento de 73% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora3')   {
+        var fluxo = 'um aumento de 91% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora4')   {
+        var fluxo = 'um aumento de 160% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora5')   {
+        var fluxo = 'um aumento de 125% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora6')   {
+        var fluxo = 'um aumento de 138% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora7')   {
+        var fluxo = 'um aumento de 110% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora8')   {
+        var fluxo = 'um aumento de 158% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora9')   {
+        var fluxo = 'um aumento de 100% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora10')   {
+        var fluxo = 'um aumento de 90% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora11')   {
+        var fluxo = 'um aumento de 50% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else{
+        var fluxo = 'um aumento de 16% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+    }
+    else if(local_sensor=='no Corredor do Banheiro no Piso Superior'){
+        if(Horarioss == 'hora1')   {
+        var fluxo = 'um aumento de 34% no fluxo de pessoas em comparção à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora2')   {
+        var fluxo = 'um aumento de 30% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora3')   {
+        var fluxo = 'um aumento de 70% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora4')   {
+        var fluxo = 'um aumento de 150% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora5')   {
+        var fluxo = 'um aumento de 129% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora6')   {
+        var fluxo = 'um aumento de 148% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora7')   {
+        var fluxo = 'um aumento de 123% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora8')   {
+        var fluxo = 'um aumento de 172% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora9')   {
+        var fluxo = 'um aumento de 99% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora10')   {
+        var fluxo = 'um aumento de 97% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora11')   {
+        var fluxo = 'um aumento de 40% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else{
+        var fluxo = 'um aumento de 24% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+    }
+
+
+    else if(local_sensor=='no Totem propaganda do Corredor 1'){
+        if(Horarioss == 'hora1')   {
+        var fluxo = 'um aumento de 58% no fluxo de pessoas em comparção à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora2')   {
+        var fluxo = 'um aumento de 33% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora3')   {
+        var fluxo = 'um aumento de 68% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora4')   {
+        var fluxo = 'um aumento de 144% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora5')   {
+        var fluxo = 'um aumento de 123% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora6')   {
+        var fluxo = 'um aumento de 157% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora7')   {
+        var fluxo = 'um aumento de 190% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora8')   {
+        var fluxo = 'um aumento de 122% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora9')   {
+        var fluxo = 'um aumento de 88% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora10')   {
+        var fluxo = 'um aumento de 93% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora11')   {
+        var fluxo = 'um aumento de 47% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else {
+        var fluxo = 'um aumento de 40% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+    }
+    else if(local_sensor=='no Corredor do Banheiro no Piso Inferior'){
+        if(Horarioss == 'hora1')   {
+        var fluxo = 'um aumento de 34% no fluxo de pessoas em comparção à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora2')   {
+        var fluxo = 'um aumento de 30% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora3')   {
+        var fluxo = 'um aumento de 70% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora4')   {
+        var fluxo = 'um aumento de 150% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora5')   {
+        var fluxo = 'um aumento de 129% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora6')   {
+        var fluxo = 'um aumento de 148% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora7')   {
+        var fluxo = 'um aumento de 123% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora8')   {
+        var fluxo = 'um aumento de 172% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora9')   {
+        var fluxo = 'um aumento de 99% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora10')   {
+        var fluxo = 'um aumento de 97% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora11')   {
+        var fluxo = 'um aumento de 40% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else {
+        var fluxo = 'um aumento de 24% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+    }
+
+    else if(local_sensor=='no Totem propaganda do Corredor 2'){
+        if(Horarioss == 'hora1')   {
+        var fluxo = 'um aumento de 60% no fluxo de pessoas em comparção à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora2')   {
+        var fluxo = 'um aumento de 44% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora3')   {
+        var fluxo = 'um aumento de 72% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora4')   {
+        var fluxo = 'um aumento de 154% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora5')   {
+        var fluxo = 'um aumento de 132% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora6')   {
+        var fluxo = 'um aumento de 164% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora7')   {
+        var fluxo = 'um aumento de 110% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora8')   {
+        var fluxo = 'um aumento de 94% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora9')   {
+        var fluxo = 'um aumento de 120% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora10')   {
+        var fluxo = 'um aumento de 109% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora11')   {
+        var fluxo = 'um aumento de 80% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else {
+        var fluxo = 'um aumento de 37% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+    }
+
+    else if(local_sensor=='no Totem propaganda das escadas rolante'){
+        if(Horarioss == 'hora1')   {
+        var fluxo = 'um aumento de 37% no fluxo de pessoas em comparção à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora2')   {
+        var fluxo = 'um aumento de 29% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora3')   {
+        var fluxo = 'um aumento de 100% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora4')   {
+        var fluxo = 'um aumento de 134% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora5')   {
+        var fluxo = 'um aumento de 167% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora6')   {
+        var fluxo = 'um aumento de 182% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora7')   {
+        var fluxo = 'um aumento de 120% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora8')   {
+        var fluxo = 'um aumento de 104% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora9')   {
+        var fluxo = 'um aumento de 136% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora10')   {
+        var fluxo = 'um aumento de 103% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora11')   {
+        var fluxo = 'um aumento de 70% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else {
+        var fluxo = 'um aumento de 55% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+    }
+
+    else if(local_sensor=='no Telão propaganda na Praça de Alimentação'){
+        if(Horarioss == 'hora1')   {
+        var fluxo = 'um aumento de 80% no fluxo de pessoas em comparção à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora2')   {
+        var fluxo = 'um aumento de 60% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora3')   {
+        var fluxo = 'um aumento de 109% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora4')   {
+        var fluxo = 'um aumento de 127% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora5')   {
+        var fluxo = 'um aumento de 108% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora6')   {
+        var fluxo = 'um aumento de 173% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora7')   {
+        var fluxo = 'um aumento de 51% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora8')   {
+        var fluxo = 'um aumento de 103% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora9')   {
+        var fluxo = 'um aumento de 145% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora10')   {
+        var fluxo = 'um aumento de 109% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else if(Horarioss == 'hora11')   {
+        var fluxo = 'um aumento de 77% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+        else {
+        var fluxo = 'um aumento de 43% no fluxo de pessoas em comparação à um dia semanal comum'
+        Simulacao.innerHTML = `Houve ${fluxo} ${local_sensor}`
+        }
+    }
+
+}
+
+</script>

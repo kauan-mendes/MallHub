@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MALL HUB</title>
+</head>
+
+<body>
+    <div style="margin-left: 35%;">
+    <h1> ﾠ SIMULADOR FINANCEIRO </h1> <br>
+    <div style="margin-left: 13%;"><span style="color: rgb(0, 0, 0);">Nome do seu shopping</span> <br> 
+        
+        
+            
+            
+            <input style="background-color: rgb(255, 255, 255);" id="nome_cliente" placeholder="ex: Shopping Center Norte">
+            <br> 
+            <span style="color: rgb(0, 0, 0);"> Digite seu lucro anual </span> <br>  <input type="number" 
+                style="background-color: rgb(255, 255, 255);" id="lucroanual"></input> <br>
+            <span style="color: rgb(0, 0, 0);"> Digite a area total </span> <br><input type="number"
+                style="background-color: rgb(255, 255, 255);" id="areatotal"> <br>
+            <span style="color: rgb(0, 0, 0);"> Digite a area de vacancia </span><br><input type="number"
+                style="background-color: rgb(255, 255, 255);" id="areavaca"></input> <br> <br>
+            <button style="background-color: rgb(255, 255, 255);" onclick="calcular()"> Calcule seu prujuizo
+                anual</button>
+        </div>
+        <div style="color: rgb(0, 0, 0);" id="mostrar"></div>
+
+    </div>
+
+
+</body>
+
+<script>
+    function calcular() {
+
+        var nomeshopping = nome_cliente.value
+        var areatoda = Number(areatotal.value)
+        var lucrodoano = Number(lucroanual.value)
+        var areasemlucro = Number(areavaca.value)
+
+        var areaporlucro = lucrodoano / areatoda
+        var prujuizo = areaporlucro * areasemlucro
+
+        mostrar.innerHTML = `Ola ${nomeshopping}, seu prejuizo esse ano foi de ${prujuizo.toFixed(2)}, contrate a MallHub para diminuir seu prejuizol!`
+
+    }
+
+</script>
+
+
+
+</html>

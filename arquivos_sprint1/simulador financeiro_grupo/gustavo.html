@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador financeiro</title>
+</head>
+<body>
+    <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <h1>Simulador financeiro</h1>
+    <h3>Calcule o prejuizo causado pela vacância</h3> <br>
+   <b> Insira o lucro total mensal: </b><input type="number" id="lucro"> <br>
+   <b> Insira a área utilizada (em m²): </b><input id="area"> <br>
+   <b> Insira a área de vacância no shopping: </b><input id="vacancia"> <br>
+<button onclick="calcular()">Calcule</button> <br>       
+<div id="calcule"></div>
+</div>
+</body>
+</html>
+
+<script>
+function calcular(){
+var lucroo = lucro.value 
+var areatotal = area.value
+var vacanciam2 = vacancia.value
+var lucrom2 = lucroo / areatotal
+var prejuizo = lucrom2 * vacanciam2
+calcule.innerHTML= `O m² do shopping gera em média R$${lucrom2.toLocaleString()}, ou seja, o prejuizo mensal causado pelas áreas
+ inutilizadas (vacância) equivale a R$${prejuizo.toLocaleString()} em média.`
+}
+
+
+
+</script>
+
+
+
+
