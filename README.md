@@ -37,3 +37,5 @@ A gestão e a definição da localização das lojas e dos painéis de propagand
 - **Yohan Hudson** - [yohanhudson](https://github.com/yohanhudson)
 - **Gustavo Rezende** - [gustavorezende96](https://github.com/gustavorezende96)
 
+
+
