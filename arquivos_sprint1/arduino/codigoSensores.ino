@@ -8,7 +8,7 @@
  */
  
 int dht_pin = A2;
-DHT dht_1 = DHT(dht_pin, dht_type); //pode-se configurar diversos sensores DHTxx
+DHT dht_1 = DHT(dht_pin, dht_type); //pode-se configurar diversos sensores DHTxx   
 
 int lm35_pin = A0, leitura_lm35 = 0;
 float temperatura;
