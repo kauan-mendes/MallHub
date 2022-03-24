@@ -97,6 +97,7 @@ INSERT INTO evento (nome, data_hora, fluxo_pessoas, id_dispositivo) VALUES ("eve
 SELECT * FROM evento;
 
 
+USE mallhub;
 SELECT * FROM usuario;
 SELECT * FROM dispositivo;
 SELECT * FROM tiposensor;
