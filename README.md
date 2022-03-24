@@ -1,7 +1,3 @@
-
-
-
-
 <p align="center">
     <img 
       src="https://i.imgur.com/ikHKK54.png"
@@ -28,14 +24,19 @@ A gestão e a definição da localização das lojas e dos painéis de propagand
 
 
 
-## Autores
+## Nosso time
 - **Maria Eduarda** - [ferreiramadu](https://github.com/ferreiramadu)
+- **Gustavo Rezende** - [gustavorezende96](https://github.com/gustavorezende96)
+- **Samuel Vinicios** - [mukavine](https://github.com/mukavine)
+- **Leonardo Mariano** - [LeonardoMS07](https://github.com/LeonardoMS07)
+- **Gabriel de Miranda** - [GabrielDeMirandaMello](https://github.com/GabrielDeMirandaMello)
+- **Andrew de Oliveira** - [AndrewFerr4r1](https://github.com/AndrewFerr4r1)
+<br>
 - **Gabriel Maximiano** - [GabrielMaxi1602](https://github.com/GabrielMaxi1602)
 - **Kauan Mendes** - [kauanmendesss](https://github.com/kauanmendesss)
 - **Kawan Gonçalves** - [kawan-goncalves](https://github.com/kawan-goncalves)
 - **Leonardo Nacagawa Silva** - [nakaleo13](https://github.com/nakaleo13)
 - **Yohan Hudson** - [yohanhudson](https://github.com/yohanhudson)
-- **Gustavo Rezende** - [gustavorezende96](https://github.com/gustavorezende96)
 
 
 
