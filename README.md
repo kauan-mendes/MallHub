@@ -33,7 +33,7 @@ A gestão e a definição da localização das lojas e dos painéis de propagand
 - **Andrew de Oliveira** - [AndrewFerr4r1](https://github.com/AndrewFerr4r1)
 
 
-##Autores
+## Autores
 - **Maria Eduarda** - [ferreiramadu](https://github.com/ferreiramadu)
 - **Gustavo Rezende** - [gustavorezende96](https://github.com/gustavorezende96)
 - **Gabriel Maximiano** - [GabrielMaxi1602](https://github.com/GabrielMaxi1602)
