@@ -1,0 +1,39 @@
+.header {
+    background-color: #ffffff;
+    color: black;
+}
+
+.container{
+    width: 80%
+}
+
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    width: 400px;
+    justify-content: space-around;
+}
+
+li a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.btEntrar {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ul {
+    margin-top: 30px;
+    padding: 0;
+}
